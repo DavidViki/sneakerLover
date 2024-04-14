@@ -1,5 +1,6 @@
 import React from "react";
 import {Link, useMatch, useResolvedPath} from "react-router-dom";
+import Dropdown from "./Dropdown";
 
 function Header(){
     return (
@@ -12,7 +13,7 @@ function Header(){
                     <CustomLink to="/men">Men</CustomLink>
                     <CustomLink to="/women">Women</CustomLink>
                     <CustomLink to="/kids">Kids</CustomLink>
-                    <CustomLink to="/brands">Brands</CustomLink>
+                    <Dropdown />
                 </ul>
 
             </nav>
