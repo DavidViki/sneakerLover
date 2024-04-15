@@ -7,7 +7,10 @@ import Kids from "./pages/Kids";
 import Nike from "./pages/Nike";
 import Adidas from "./pages/Adidas";
 import Puma from "./pages/Puma";
-import Reebok from "./pages/Reebok"
+import Reebok from "./pages/Reebok";
+import Footer from "./Footer";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 
 import { Route, Routes } from "react-router-dom";
@@ -26,8 +29,11 @@ function App(){
           <Route path="/adidas" element={<Adidas />} />
           <Route path="/reebok" element={<Reebok />} />
           <Route path="/puma" element={<Puma />} />
+          <Route path="/about" element={<About />} />
+         <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+      <Footer />
     </div>
    
   );
